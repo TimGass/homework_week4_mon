@@ -6,6 +6,9 @@ var view = $("#view");
           eval(view.val())
         );
       }
+      else if ($(this).val() === "X") {
+        view.val(view.val() + "*");
+      }
       else{
       view.val(view.val() + $(this).val());
     }
